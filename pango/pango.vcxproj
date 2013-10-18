@@ -77,8 +77,11 @@
     <ClCompile Include="arr_sort.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="perfect_string.c" />
-    <ClCompile Include="string_symmetry.c" />
+    <ClCompile Include="kill_chars.c" />
     <ClCompile Include="sub_sequence.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="lib.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

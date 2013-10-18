@@ -21,14 +21,19 @@
     <ClCompile Include="arr_sort.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="string_symmetry.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="perfect_string.c">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="sub_sequence.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="kill_chars.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="lib.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
