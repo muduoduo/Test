@@ -19,26 +19,39 @@
 */
 #include <stdio.h>
 #include <string.h>
-
+#define swap(a,b) a^=b^=a^=b
 int minLength(const char *s)
 {
-	char stack[201];
-	int i,top=0;
-	int min_len=0,sum='a'+'b'+'c';
-	for(i=0;i < strlen(s);i++)
+	char stack[201],tmp;
+	int i,j,top,len=strlen(s);
+	int min_len=300,sum='a'+'b'+'c';
+	for(i=0;i < len;i++)
 	{
-		stack[top++]=s[i];
-		stack[top]='\0';
-		printf("%s\n",stack);
-		while(top>1 && stack[top-1] != stack[top-2])
+		top=0;
+		for (j=i-1;j>-1;j--)
 		{
-			stack[top-2]=sum-stack[top-1]-stack[top-2];
-			top--;
+			stack[top++]=s[j];
+			while(top>1 && stack[top-1] != stack[top-2])
+			{
+				stack[top-2]=sum-stack[top-1]-stack[top-2];
+				top--;
+			}
 		}
+		for (j=0;j<top;j++)
+			swap(stack[j],stack[top-1-j]);
+		for (j=i;j<len;j++)
+		{
+			stack[top++]=s[j];
+			while(top>1 && stack[top-1] != stack[top-2])
+			{
+				stack[top-2]=sum-stack[top-1]-stack[top-2];
+				top--;
+			}
+		}
+		if(top<min_len)
+			min_len=top;
 	}
-	stack[top]='\0';
-	printf("%s\n",stack);
-	return top;
+	return min_len;
 }
 
 #endif

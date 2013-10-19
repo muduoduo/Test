@@ -30,6 +30,12 @@
     <ClCompile Include="kill_chars.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="palindrome.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="pour_water.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="lib.h">

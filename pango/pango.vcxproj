@@ -78,6 +78,8 @@
     <ClCompile Include="main.c" />
     <ClCompile Include="perfect_string.c" />
     <ClCompile Include="kill_chars.c" />
+    <ClCompile Include="palindrome.c" />
+    <ClCompile Include="pour_water.c" />
     <ClCompile Include="sub_sequence.c" />
   </ItemGroup>
   <ItemGroup>
