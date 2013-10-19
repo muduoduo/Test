@@ -1,7 +1,7 @@
 #include "lib.h"
 #ifdef SUB_SEQUENCE
 /*
-* æ•°ç»„å­åºåˆ—
+* Êı×é×ÓĞòÁĞ
 */
 
 int run(const int *a,int n)
