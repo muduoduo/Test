@@ -19,39 +19,18 @@
 */
 #include <stdio.h>
 #include <string.h>
-#define swap(a,b) a^=b^=a^=b
+
 int minLength(const char *s)
 {
-	char stack[201],tmp;
-	int i,j,top,len=strlen(s);
-	int min_len=300,sum='a'+'b'+'c';
-	for(i=0;i < len;i++)
-	{
-		top=0;
-		for (j=i-1;j>-1;j--)
-		{
-			stack[top++]=s[j];
-			while(top>1 && stack[top-1] != stack[top-2])
-			{
-				stack[top-2]=sum-stack[top-1]-stack[top-2];
-				top--;
-			}
-		}
-		for (j=0;j<top;j++)
-			swap(stack[j],stack[top-1-j]);
-		for (j=i;j<len;j++)
-		{
-			stack[top++]=s[j];
-			while(top>1 && stack[top-1] != stack[top-2])
-			{
-				stack[top-2]=sum-stack[top-1]-stack[top-2];
-				top--;
-			}
-		}
-		if(top<min_len)
-			min_len=top;
-	}
-	return min_len;
+	int mark[3]={0};
+	int i,len=strlen(s);
+	for (i=0;i<len;i++)
+		mark[s[i]-'a']++;
+	if(mark[0]==len ||mark[1]==len ||mark[2]==len)
+		return len;
+	if(mark[0]%2==mark[1]%2 && mark[0]%2==mark[2]%2)
+		return 2;
+	return 1;
 }
 
 #endif
