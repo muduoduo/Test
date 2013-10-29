@@ -75,7 +75,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="arr_sort.c" />
+    <ClCompile Include="lawful_string.c" />
     <ClCompile Include="main.c" />
+    <ClCompile Include="max_sub_arr.c" />
+    <ClCompile Include="min_stack.c" />
     <ClCompile Include="perfect_string.c" />
     <ClCompile Include="kill_chars.c" />
     <ClCompile Include="palindrome.c" />

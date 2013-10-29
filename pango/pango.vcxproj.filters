@@ -36,6 +36,15 @@
     <ClCompile Include="pour_water.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="lawful_string.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="max_sub_arr.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="min_stack.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="lib.h">
