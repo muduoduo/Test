@@ -45,6 +45,9 @@
     <ClCompile Include="min_stack.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="convert_link.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="lib.h">

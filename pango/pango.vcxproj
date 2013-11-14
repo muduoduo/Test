@@ -75,6 +75,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="arr_sort.c" />
+    <ClCompile Include="convert_link.c" />
     <ClCompile Include="lawful_string.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="max_sub_arr.c" />
